@@ -132,7 +132,7 @@ public class Controller implements Initializable {
             length_miles_field.setText(String.valueOf(miles));
 
         }
-//todo Reset button to clear all data after calculations
+// todo Reset button to clear all data after calculations
 
     }
 
