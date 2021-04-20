@@ -1,98 +1,85 @@
 
-~
-java:S1104"\Make mass_tones_field a static final constant or non-public and provide accessors if needed.(¨“Œ¤ıÿÿÿÿ8õ¢Æ¹Œ/
-y	java:S116"]Rename this field "temp_celsius_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğªÖ8º·Ù¹Œ/
-	java:S116%"^Rename this field "volume_millil_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÊ¥ıÿÿÿÿ8˜ƒŞ¹Œ/
-x
-java:S1104)"[Make square_dm_field a static final constant or non-public and provide accessors if needed.(Íü”´8±ÿß¹Œ/
-T
-java:S11444"2Remove this unused private "lengthConvert" method.(¾ç“ãıÿÿÿÿ8›î†½Œ/
-|	java:S116"[Rename this field "mass_tones_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨“Œ¤ıÿÿÿÿ8õ¢Æ¹Œ/
-~
-java:S1104"\Make mass_grams_field a static final constant or non-public and provide accessors if needed.(üäÎéüÿÿÿÿ8ÛîÄ¹Œ/
-…
-java:S1104"cMake length_kilometers_field a static final constant or non-public and provide accessors if needed.(ßÀã†şÿÿÿÿ8ôòÀ¹Œ/
-
-java:S1104%"_Make volume_millil_field a static final constant or non-public and provide accessors if needed.(öÊ¥ıÿÿÿÿ8˜ƒŞ¹Œ/
-ƒ
-java:S1104-"aMake convert_button_square a static final constant or non-public and provide accessors if needed.(¼È¥óşÿÿÿÿ8ÀŞà¹Œ/
-£
-java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8¤¥à¹Œ/
-	java:S116-"`Rename this field "convert_button_square" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼È¥óşÿÿÿÿ8ÀŞà¹Œ/
-~
-java:S1104"aMake convert_button_length a static final constant or non-public and provide accessors if needed.(ÍòÁø8õŸÃ¹Œ/
-¤
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Êó¾ıÿÿÿÿ8Ÿí‡¾Œ/
-„
-java:S1104"bMake lengthCentimetersField a static final constant or non-public and provide accessors if needed.(¨÷ŒÎüÿÿÿÿ8ó‡‘½Œ/
 }
-java:S1104*"[Make square_cm_field a static final constant or non-public and provide accessors if needed.(Ø¾¾§úÿÿÿÿ8â“à¹Œ/
+java:S1104%"`Make volumeCubcentimField a static final constant or non-public and provide accessors if needed.(¿Â¼Â8±½ÍŒ/
 
-java:S1104!"bMake volume_cubmetres_field a static final constant or non-public and provide accessors if needed.(³ëøÃ8Ïİ¹Œ/
-z	java:S116"^Rename this field "length_meters_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñç†™8Í«…½Œ/
-€	java:S116"_Rename this field "mass_kilograms_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îüÖ‚úÿÿÿÿ8ç³Å¹Œ/
-‚
-java:S1104"`Make mass_kilograms_field a static final constant or non-public and provide accessors if needed.(îüÖ‚úÿÿÿÿ8ç³Å¹Œ/
-|
-java:S1104"_Make length_meters_field a static final constant or non-public and provide accessors if needed.(Ñç†™8Í«…½Œ/
-
-java:S1104("_Make square_metres_field a static final constant or non-public and provide accessors if needed.(İ»Ëöüÿÿÿÿ8ñäß¹Œ/
-}	java:S116"\Rename this field "mass_pounds_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ªãîúÿÿÿÿ8²ÎÅ¹Œ/
-~	java:S116&"]Rename this field "convert_button_vol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨áİğûÿÿÿÿ8Â«Ş¹Œ/
-|
-java:S1104$"_Make volume_litres_field a static final constant or non-public and provide accessors if needed.(ÕÃ‰å8˜ƒŞ¹Œ/
-|
-java:S1104"_Make length_inches_field a static final constant or non-public and provide accessors if needed.(ĞÚŞÊ8ã©Á¹Œ/
-v	java:S116+"ZRename this field "square_km_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÂÇ—8¤¥à¹Œ/
-T
-java:S11724"2Remove this unused method parameter "actionEvent".(¾ç“ãıÿÿÿÿ8›î†½Œ/
+java:S1104*"]Make squareMetresField a static final constant or non-public and provide accessors if needed.(‘Â¢óıÿÿÿÿ8‘ÿ½ÍŒ/
 x
-java:S1104"[Make temp_fahr_field a static final constant or non-public and provide accessors if needed.(£Ë×Ã8Ù¹Ü¹Œ/
+java:S1104."[Make squareHectField a static final constant or non-public and provide accessors if needed.(‡°»…8çÁ¾ÍŒ/
 ¤
-java:S1186Š"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¶½¸±şÿÿÿÿ8Ÿí‡¾Œ/
-ƒ	java:S116"bRename this field "length_kilometers_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÀã†şÿÿÿÿ8ôòÀ¹Œ/
-€
-java:S1104"^Make length_miles_field a static final constant or non-public and provide accessors if needed.(²Óû±ùÿÿÿÿ8µŠÁ¹Œ/
-
-java:S1104"_Make convert_button_mass a static final constant or non-public and provide accessors if needed.(Æ¨»ëùÿÿÿÿ8ÛÀÆ¹Œ/
-z
-java:S1104,"]Make square_hect_field a static final constant or non-public and provide accessors if needed.(Í¯µÚ8“Æà¹Œ/
-v	java:S116"ZRename this field "temp_fahr_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Ë×Ã8Ù¹Ü¹Œ/
-	java:S116""`Rename this field "volume_cubdecim_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬×Àçşÿÿÿÿ8˜ƒŞ¹Œ/
-t	java:S116"XRename this field "mass_oz_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê«¦à8áûÅ¹Œ/
-z	java:S116$"^Rename this field "volume_litres_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÃ‰å8˜ƒŞ¹Œ/
-v	java:S116)"ZRename this field "square_dm_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Íü”´8±ÿß¹Œ/
-
-java:S1104#"bMake volume_cubcentim_field a static final constant or non-public and provide accessors if needed.(œö”Ô8˜ƒŞ¹Œ/
-}	java:S116#"aRename this field "volume_cubcentim_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œö”Ô8˜ƒŞ¹Œ/
-
-java:S1104"]Make mass_pounds_field a static final constant or non-public and provide accessors if needed.(“ªãîúÿÿÿÿ8²ÎÅ¹Œ/
-
-java:S1104"_Make convert_button_temp a static final constant or non-public and provide accessors if needed.( ¨‰şÿÿÿÿ8ûôâ¹Œ/
-|	java:S116"`Rename this field "convert_button_length" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍòÁø8õŸÃ¹Œ/
-v
-java:S1104"YMake mass_oz_field a static final constant or non-public and provide accessors if needed.(Ê«¦à8áûÅ¹Œ/
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦Ôª½ùÿÿÿÿ8Ÿí‡¾Œ/
 {
-java:S1104"^Make temp_celsius_field a static final constant or non-public and provide accessors if needed.(ğªÖ8º·Ù¹Œ/
-z
-java:S1104"]Make temp_kelvin_field a static final constant or non-public and provide accessors if needed.(´–ü†8ëÌÜ¹Œ/
-	java:S116("^Rename this field "square_metres_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ»Ëöüÿÿÿÿ8ñäß¹Œ/
-Ÿ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(àÂ½è8Ÿí‡¾Œ/
-ƒ
-java:S1104""aMake volume_cubdecim_field a static final constant or non-public and provide accessors if needed.(¬×Àçşÿÿÿÿ8˜ƒŞ¹Œ/
-x
-java:S1104+"[Make square_km_field a static final constant or non-public and provide accessors if needed.(ÚÂÇ—8¤¥à¹Œ/
-x	java:S116,"\Rename this field "square_hect_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í¯µÚ8“Æà¹Œ/
-~	java:S116"]Rename this field "length_miles_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Óû±ùÿÿÿÿ8µŠÁ¹Œ/
-¤
-java:S1186“"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘ˆƒ’øÿÿÿÿ8Ÿí‡¾Œ/
-z	java:S116"^Rename this field "length_inches_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÚŞÊ8ã©Á¹Œ/
-{	java:S116*"ZRename this field "square_cm_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¾¾§úÿÿÿÿ8â“à¹Œ/
-}	java:S116!"aRename this field "volume_cubmetres_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ëøÃ8Ïİ¹Œ/
-|	java:S116"[Rename this field "mass_grams_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üäÎéüÿÿÿÿ8ÛîÄ¹Œ/
-	java:S116"^Rename this field "convert_button_mass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¨»ëùÿÿÿÿ8ÛÀÆ¹Œ/
-x	java:S116"\Rename this field "temp_kelvin_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´–ü†8ëÌÜ¹Œ/
-	java:S116"^Rename this field "convert_button_temp" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ¨‰şÿÿÿÿ8ûôâ¹Œ/
+java:S1104+"YMake squareDmField a static final constant or non-public and provide accessors if needed.(œ£Ë ıÿÿÿÿ8‘ÿ½ÍŒ/
+|
+java:S1104/"_Make convertButtonSquare a static final constant or non-public and provide accessors if needed.(•é‰§8çÁ¾ÍŒ/
 €
-java:S1104&"^Make convert_button_vol a static final constant or non-public and provide accessors if needed.(¨áİğûÿÿÿÿ8Â«Ş¹Œ/
+java:S1104"^Make massKilogramsField a static final constant or non-public and provide accessors if needed.(¦ÉÎúÿÿÿÿ8¢¶ºÍŒ/
+x
+java:S1104 "[Make tempKelvinField a static final constant or non-public and provide accessors if needed.(»©Î”8¶ç»ÍŒ/
+
+java:S1104"]Make lengthMetersField a static final constant or non-public and provide accessors if needed.(Õ‡ï›úÿÿÿÿ8øÇ˜ÁŒ/
+{
+java:S1104-"YMake squareKmField a static final constant or non-public and provide accessors if needed.(ì’™Óşÿÿÿÿ8çÁ¾ÍŒ/
+
+java:S11044"]Make volumeResetButton a static final constant or non-public and provide accessors if needed.(±ÎŒÿüÿÿÿÿ8¿òÁŒ/
+z
+java:S11045"]Make squareResetButton a static final constant or non-public and provide accessors if needed.(¦„«Š8Ğõ„ÁŒ/
+¤
+java:S1186À"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ñ‹şÿÿÿÿ8šéÃÍŒ/
+„
+java:S1104"bMake lengthCentimetersField a static final constant or non-public and provide accessors if needed.(¨÷ŒÎüÿÿÿÿ8ó‡‘½Œ/
+z
+java:S1104"]Make convertButtonMass a static final constant or non-public and provide accessors if needed.(–’šÅ8¶ç»ÍŒ/
+O
+java:S1172ª",Remove this unused method parameter "event".(Í“â¦ıÿÿÿÿ8šéÃÍŒ/
+J
+java:S1172²",Remove this unused method parameter "event".(Ÿç²…8šéÃÍŒ/
+y
+java:S1104"\Make tempCelsiusField a static final constant or non-public and provide accessors if needed.(´º·Ù8¶ç»ÍŒ/
+
+java:S1104'"]Make volumeMillilField a static final constant or non-public and provide accessors if needed.(’³á·øÿÿÿÿ8±½ÍŒ/
+
+java:S1104"_Make convertButtonLength a static final constant or non-public and provide accessors if needed.(ƒç´şÿÿÿÿ8¶ç»ÍŒ/
+x
+java:S1104"\Make lengthMilesField a static final constant or non-public and provide accessors if needed.(—ªÒD8ğ¼“ÁŒ/
+|
+java:S1104$"_Make volumeCubdecimField a static final constant or non-public and provide accessors if needed.(š€¤8±½ÍŒ/
+w
+java:S1104"ZMake massTonesField a static final constant or non-public and provide accessors if needed.(à±Ë½8¢¶ºÍŒ/
+|
+java:S1104"ZMake massGramsField a static final constant or non-public and provide accessors if needed.(«¾·Äşÿÿÿÿ8¢¶ºÍŒ/
+
+java:S11041"]Make lengthResetButton a static final constant or non-public and provide accessors if needed.(ƒş©©úÿÿÿÿ8ø–üÀŒ/
+
+java:S1104"]Make lengthInchesField a static final constant or non-public and provide accessors if needed.(ç£¨üûÿÿÿÿ8ğ¼“ÁŒ/
+£
+java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8¤¥à¹Œ/
+¤
+java:S1186”"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¶½¸±şÿÿÿÿ8‹‰÷ÁŒ/
+¤
+java:S1186›"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÚ³¬üÿÿÿÿ8Ÿí‡¾Œ/
+J
+java:S1172¸",Remove this unused method parameter "event".(µŒ©»8¬ÜÊÍŒ/
+
+java:S1104!"]Make convertButtonTemp a static final constant or non-public and provide accessors if needed.(Ì×Üûÿÿÿÿ8¶ç»ÍŒ/
+¤
+java:S1186˜"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Êó¾ıÿÿÿÿ8Ÿí‡¾Œ/
+z
+java:S1104&"]Make volumeLitresField a static final constant or non-public and provide accessors if needed.(Ô…Êá8±½ÍŒ/
+ƒ
+java:S1104"aMake lengthKilometersField a static final constant or non-public and provide accessors if needed.(¢É„ˆûÿÿÿÿ8âÔ“ÁŒ/
+~
+java:S1104("\Make convertButtonVol a static final constant or non-public and provide accessors if needed.(Äçç»ùÿÿÿÿ8‘ÿ½ÍŒ/
+}
+java:S1104#"`Make volumeCubmetresField a static final constant or non-public and provide accessors if needed.(Œí¿–8¶ç»ÍŒ/
+x
+java:S11043"[Make tempResetButton a static final constant or non-public and provide accessors if needed.(ßÔÄ8úğ€ÁŒ/
+v
+java:S1104"YMake tempFahrField a static final constant or non-public and provide accessors if needed.(¬ÓªÀ8¶ç»ÍŒ/
+x
+java:S11042"[Make massResetButton a static final constant or non-public and provide accessors if needed.(¼üµ8º€ÁŒ/
+x
+java:S1104"[Make massPoundsField a static final constant or non-public and provide accessors if needed.(áòö½8¢¶ºÍŒ/
+v
+java:S1104,"YMake squareCmField a static final constant or non-public and provide accessors if needed.(×êÿ8çÁ¾ÍŒ/
+y
+java:S1104"WMake massOzField a static final constant or non-public and provide accessors if needed.(­åÈÇûÿÿÿÿ8¢¶ºÍŒ/

@@ -1,174 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="10" prefHeight="284.0" prefWidth="495.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" prefHeight="284.0" prefWidth="495.0" vgap="10"
+          xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="sample.MainController">
     <columnConstraints>
-        <ColumnConstraints />
+        <ColumnConstraints/>
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints />
+        <RowConstraints/>
     </rowConstraints>
     <TabPane prefHeight="278.0" prefWidth="549.0" tabClosingPolicy="UNAVAILABLE">
-        <Tab text="Length ">
+        <Tab text="Length">
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
-                <GridPane layoutX="70.0" layoutY="12.0" prefHeight="186.0" prefWidth="359.0">
-                    <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.9999755859375" minWidth="10.0" prefWidth="77.5999755859375" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="278.4000244140625" />
-                    </columnConstraints>
-                    <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Meters" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kilometers" GridPane.rowIndex="1" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Miles" GridPane.rowIndex="2" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Santimeters" GridPane.rowIndex="3" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inches" GridPane.rowIndex="4" />
-                    <TextField fx:id="length_meters_field" prefHeight="26.0" prefWidth="120.0" GridPane.columnIndex="1" />
-                    <TextField fx:id="length_kilometers_field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                    <TextField fx:id="length_miles_field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                    <TextField fx:id="lengthCentimetersField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                    <TextField fx:id="length_inches_field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                </GridPane>
-                <Button fx:id="convert_button_length" defaultButton="true" layoutX="248.0" layoutY="210.0" mnemonicParsing="false" onAction="#lengthConvert" text="CONVERT" textAlignment="CENTER" />
-                <Button layoutX="391.0" layoutY="210.0" mnemonicParsing="false" text="Copy result" />
+                <Button fx:id="convertButtonLength" defaultButton="true" layoutX="211.0" layoutY="211.0"
+                        mnemonicParsing="false" onAction="#lengthConvert" text="CONVERT" textAlignment="CENTER"/>
+                <Text layoutX="43.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From"
+                      AnchorPane.leftAnchor="30.0"/>
+                <Text layoutX="285.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To"/>
+                <ComboBox fx:id="lengthFromCB" layoutX="73.0" layoutY="173.0" prefWidth="150.0"/>
+                <ComboBox fx:id="lengthToCB" layoutX="316.0" layoutY="169.0" prefWidth="150.0"
+                          AnchorPane.rightAnchor="30.0"/>
+                <TextField fx:id="lengthInputField" layoutX="174.0" layoutY="100.0"/>
+                <Text layoutX="204.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:"/>
             </AnchorPane>
         </Tab>
         <Tab text="Mass">
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
-                <GridPane layoutX="70.0" layoutY="12.0" prefHeight="189.0" prefWidth="360.0">
-                    <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.3999755859375" minWidth="10.0" prefWidth="78.8" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.00001220703126" minWidth="10.0" prefWidth="280.8" />
-                    </columnConstraints>
-                    <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Grams" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kilograms" GridPane.rowIndex="1" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pounds" GridPane.rowIndex="2" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="OZ" GridPane.rowIndex="3" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tones" GridPane.rowIndex="4" />
-                    <TextField fx:id="mass_grams_field" prefHeight="26.0" prefWidth="120.0" GridPane.columnIndex="1" />
-                    <TextField fx:id="mass_kilograms_field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                    <TextField fx:id="mass_pounds_field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                    <TextField fx:id="mass_oz_field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                    <TextField fx:id="mass_tones_field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                </GridPane>
-                <Button fx:id="convert_button_mass" layoutX="248.0" layoutY="210.0" mnemonicParsing="false" onAction="#massConvert" text="CONVERT" />
-                <Button layoutX="391.0" layoutY="210.0" mnemonicParsing="false" text="Copy result" />
+                <Button fx:id="convertMassButton" defaultButton="true" layoutX="211.0" layoutY="211.0"
+                        mnemonicParsing="false" onAction="#massConvert" text="CONVERT" textAlignment="CENTER"/>
+                <Text layoutX="43.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From"
+                      AnchorPane.leftAnchor="30.0"/>
+                <Text layoutX="285.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To"/>
+                <ComboBox fx:id="massFromCB" layoutX="73.0" layoutY="173.0" prefWidth="150.0"/>
+                <ComboBox fx:id="massToCB" layoutX="316.0" layoutY="169.0" prefWidth="150.0"
+                          AnchorPane.rightAnchor="30.0"/>
+                <TextField fx:id="massInputField" layoutX="174.0" layoutY="100.0"/>
+                <Text layoutX="204.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:"/>
             </AnchorPane>
         </Tab>
         <Tab text="Temperature">
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
-                <GridPane layoutX="70.0" layoutY="12.0" prefHeight="183.0" prefWidth="360.0">
-                    <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.200048828125" minWidth="10.0" prefWidth="61.600012207031256" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.80000000000007" minWidth="10.0" prefWidth="253.5999877929688" />
-                    </columnConstraints>
-                    <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Celsius" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fahrenheit" GridPane.rowIndex="1" />
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kelvin" GridPane.rowIndex="2" />
-
-                    <TextField fx:id="temp_celsius_field" prefHeight="26.0" prefWidth="189.0" GridPane.columnIndex="1" />
-                    <TextField fx:id="temp_fahr_field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                    <TextField fx:id="temp_kelvin_field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                </GridPane>
-                <Button fx:id="convert_button_temp" layoutX="248.0" layoutY="210.0" mnemonicParsing="false" onAction="#tempConvert" text="CONVERT" />
-                <Button layoutX="391.0" layoutY="210.0" mnemonicParsing="false" text="Copy result" />
+                <Button fx:id="convertTempButton" defaultButton="true" layoutX="211.0" layoutY="211.0"
+                        mnemonicParsing="false" onAction="#tempConvert" text="CONVERT" textAlignment="CENTER"/>
+                <Text layoutX="43.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From"
+                      AnchorPane.leftAnchor="30.0"/>
+                <Text layoutX="285.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To"/>
+                <ComboBox fx:id="tempFromCB" layoutX="73.0" layoutY="173.0" prefWidth="150.0"/>
+                <ComboBox fx:id="tempToCB" layoutX="316.0" layoutY="169.0" prefWidth="150.0"
+                          AnchorPane.rightAnchor="30.0"/>
+                <TextField fx:id="tempInputField" layoutX="174.0" layoutY="100.0"/>
+                <Text layoutX="204.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:"/>
+            </AnchorPane>
+        </Tab>
+        <Tab text="Square">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
+                <Button fx:id="convertSquareButton" defaultButton="true" layoutX="211.0" layoutY="211.0"
+                        mnemonicParsing="false" onAction="#squareConvert" text="CONVERT" textAlignment="CENTER"/>
+                <Text layoutX="43.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From"
+                      AnchorPane.leftAnchor="30.0"/>
+                <Text layoutX="285.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To"/>
+                <ComboBox fx:id="squareFromCB" layoutX="73.0" layoutY="173.0" prefWidth="150.0"/>
+                <ComboBox fx:id="squareToCB" layoutX="316.0" layoutY="169.0" prefWidth="150.0"
+                          AnchorPane.rightAnchor="30.0"/>
+                <TextField fx:id="squareInputField" layoutX="174.0" layoutY="100.0"/>
+                <Text layoutX="204.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:"/>
             </AnchorPane>
         </Tab>
         <Tab text="Volume">
-            <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
-                    <children>
-                        <GridPane layoutX="56.0" layoutY="12.0" prefHeight="190.0" prefWidth="374.0">
-                            <columnConstraints>
-                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.4" minWidth="10.0" prefWidth="144.8000244140625" />
-                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.59998321533203" minWidth="10.0" prefWidth="170.39997558593754" />
-                            </columnConstraints>
-                            <rowConstraints>
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                            </rowConstraints>
-                            <children>
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cubic metres (M³)" />
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cubic decimetres (DM³)" GridPane.rowIndex="1" />
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cubic centimetres (CM³)" wrappingWidth="131.13946914672852" GridPane.rowIndex="2" />
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Litres" GridPane.rowIndex="3" />
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Millilitres" GridPane.rowIndex="4" />
-                                <TextField fx:id="volume_cubmetres_field" prefHeight="26.0" prefWidth="120.0" GridPane.columnIndex="1" />
-                                <TextField fx:id="volume_cubdecim_field" prefWidth="186.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                <TextField fx:id="volume_cubcentim_field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                <TextField fx:id="volume_litres_field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                <TextField fx:id="volume_millil_field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                            </children>
-                        </GridPane>
-                        <Button fx:id="convert_button_vol" layoutX="248.0" layoutY="210.0" mnemonicParsing="false" onAction="#volConvert" text="CONVERT" />
-                        <Button layoutX="391.0" layoutY="210.0" mnemonicParsing="false" text="Copy result" />
-                    </children>
-                </AnchorPane>
-            </content>
-        </Tab>
-        <Tab onSelectionChanged="#squareConvert" text="Square">
-            <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
-                    <children>
-                        <GridPane layoutX="45.0" layoutY="12.0" prefHeight="190.0" prefWidth="403.0">
-                            <columnConstraints>
-                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.8000244140625" minWidth="10.0" prefWidth="164.8000244140625" />
-                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.59998321533203" minWidth="10.0" prefWidth="150.39997558593754" />
-                            </columnConstraints>
-                            <rowConstraints>
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                            </rowConstraints>
-                            <children>
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Square metres (M³)" />
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Square decimetres (DM³)" GridPane.rowIndex="1" />
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Square centimetres (CM³)" GridPane.rowIndex="2" />
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Square kilometres (KM³)" GridPane.rowIndex="3" />
-                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hectares" GridPane.rowIndex="4" />
-                                <TextField fx:id="square_metres_field" prefHeight="26.0" prefWidth="181.0" GridPane.columnIndex="1" />
-                                <TextField fx:id="square_dm_field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                <TextField fx:id="square_cm_field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                <TextField fx:id="square_km_field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                <TextField fx:id="square_hect_field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                            </children>
-                        </GridPane>
-                        <Button fx:id="convert_button_square" layoutX="248.0" layoutY="210.0" mnemonicParsing="false" text="CONVERT" />
-                        <Button layoutX="391.0" layoutY="210.0" mnemonicParsing="false" text="Copy result" />
-                    </children>
-                </AnchorPane>
-            </content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
+                <Button fx:id="convertVolumeButton" defaultButton="true" layoutX="211.0" layoutY="211.0"
+                        mnemonicParsing="false" onAction="#volumeConvert" text="CONVERT" textAlignment="CENTER"/>
+                <Text layoutX="43.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From"
+                      AnchorPane.leftAnchor="30.0"/>
+                <Text layoutX="285.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To"/>
+                <ComboBox fx:id="volumeFromCB" layoutX="73.0" layoutY="173.0" prefWidth="150.0"/>
+                <ComboBox fx:id="volumeToCB" layoutX="316.0" layoutY="169.0" prefWidth="150.0"
+                          AnchorPane.rightAnchor="30.0"/>
+                <TextField fx:id="volumeInputField" layoutX="174.0" layoutY="100.0"/>
+                <Text layoutX="204.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:"/>
+            </AnchorPane>
         </Tab>
     </TabPane>
 </GridPane>
