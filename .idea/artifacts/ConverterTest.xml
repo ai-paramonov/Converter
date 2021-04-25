@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ConverterTest">
+    <output-path>$PROJECT_DIR$/../../ConverterApp</output-path>
+    <root id="archive" name="ConverterTest.jar">
+      <element id="archive" name="ConverterTest.jar">
+        <element id="module-output" name="ConverterTest" />
+      </element>
+    </root>
+  </artifact>
+</component>
