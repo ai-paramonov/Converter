@@ -5,6 +5,9 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.net.URL;
 import java.rmi.UnexpectedException;
 import java.util.ResourceBundle;
@@ -88,16 +91,17 @@ public class MainController implements Initializable {
     );
 
 
-    public String lengthConvert() {
+    @FXML
+    private String lengthConvert() {
 
         double result = 0;
         String valueCB1 = lengthFromCB.getValue();
         String valueCB2 = lengthToCB.getValue();
 
         try {
-            double inputData = Double.parseDouble(lengthInputField.getText().trim().replace(",", "."));
+            var inputData = Double.parseDouble(lengthInputField.getText().trim().replace(",", "."));
             if (inputData < 0) {
-                throw new UnexpectedException("Negative value entered!");
+                throw new UnexpectedException(Constants.NE_WARN);
             }
 
             if (valueCB1.equals(lengthValues.get(0)) ^ valueCB2.equals(lengthValues.get(0))) {
@@ -123,11 +127,14 @@ public class MainController implements Initializable {
             return inputData + " " + valueCB1 + " = " + result + " " + valueCB2;
 
         } catch (NullPointerException npe) {
-            return "No units selected. Choose units to convert and try again.";
+            npe.printStackTrace();
+            return Constants.NPE_WARN;
         } catch (NumberFormatException nfe) {
-            return "Input field is empty! Try again.";
+            nfe.printStackTrace();
+            return Constants.NFE_WARN;
         } catch (UnexpectedException ne) {
-            return "Negative value entered! Try again.";
+            ne.printStackTrace();
+            return Constants.NE_WARN;
         }
 
 
@@ -141,14 +148,15 @@ public class MainController implements Initializable {
 
     );
 
-    public String massConvert() {
+    @FXML
+    private String massConvert() {
         double result = 0;
         String valueCB1 = massFromCB.getValue();
         String valueCB2 = massToCB.getValue();
         try {
-            double inputData = Double.parseDouble(massInputField.getText().trim().replace(",", "."));
+            var inputData = Double.parseDouble(massInputField.getText().trim().replace(",", "."));
             if (inputData < 0) {
-                throw new UnexpectedException("Negative value entered!");
+                throw new UnexpectedException(Constants.NE_WARN);
             }
             if (valueCB1.equals(massValues.get(0))) {
                 if (valueCB2.equals(massValues.get(0))) result = inputData;
@@ -179,11 +187,14 @@ public class MainController implements Initializable {
             return inputData + " " + valueCB1 + " = " + result + " " + valueCB2;
 
         } catch (NullPointerException npe) {
-            return "No units selected. Choose units to convert and try again.";
+            npe.printStackTrace();
+            return Constants.NPE_WARN;
         } catch (NumberFormatException nfe) {
-            return "Input field is empty! Try again.";
+            nfe.printStackTrace();
+            return Constants.NFE_WARN;
         } catch (UnexpectedException ne) {
-            return "Negative value entered! Try again.";
+            ne.printStackTrace();
+            return Constants.NE_WARN;
         }
     }
 
@@ -194,12 +205,13 @@ public class MainController implements Initializable {
 
     );
 
-    public String tempConvert() {
+    @FXML
+    private String tempConvert() {
         double result = 0;
         String valueCB1 = tempFromCB.getValue();
         String valueCB2 = tempToCB.getValue();
         try {
-            double inputData = Double.parseDouble(tempInputField.getText().trim().replace(",", "."));
+            var inputData = Double.parseDouble(tempInputField.getText().trim().replace(",", "."));
 
             if (valueCB1.equals(tempValues.get(0))) {
                 if (valueCB2.equals(tempValues.get(0))) result = inputData;
@@ -220,9 +232,11 @@ public class MainController implements Initializable {
             return inputData + " " + valueCB1 + " = " + result + " " + valueCB2;
 
         } catch (NullPointerException npe) {
-            return "No units selected. Choose units to convert and try again.";
+            npe.printStackTrace();
+            return Constants.NPE_WARN;
         } catch (NumberFormatException nfe) {
-            return "Input field is empty! Try again.";
+            nfe.printStackTrace();
+            return Constants.NFE_WARN;
 
         }
     }
@@ -240,9 +254,9 @@ public class MainController implements Initializable {
         String valueCB1 = squareFromCB.getValue();
         String valueCB2 = squareToCB.getValue();
         try {
-            double inputData = Double.parseDouble(squareInputField.getText().trim().replace(",", "."));
+            var inputData = Double.parseDouble(squareInputField.getText().trim().replace(",", "."));
             if (inputData < 0) {
-                throw new UnexpectedException("Negative value entered!");
+                throw new UnexpectedException(Constants.NE_WARN);
             }
             if (valueCB1.equals(squareValues.get(0))) {
                 if (valueCB2.equals(squareValues.get(0))) result = inputData;
@@ -273,11 +287,14 @@ public class MainController implements Initializable {
             return inputData + " " + valueCB1 + " = " + result + " " + valueCB2;
 
         } catch (NullPointerException npe) {
-            return "No units selected. Choose units to convert and try again.";
+            npe.printStackTrace();
+            return Constants.NPE_WARN;
         } catch (NumberFormatException nfe) {
-            return "Input field is empty! Try again.";
+            nfe.printStackTrace();
+            return Constants.NFE_WARN;
         } catch (UnexpectedException ne) {
-            return "Negative value entered! Try again.";
+            ne.printStackTrace();
+            return Constants.NE_WARN;
         }
     }
 
@@ -290,14 +307,15 @@ public class MainController implements Initializable {
     );
 
 
-    public String volumeConvert() {
+    @FXML
+    private String volumeConvert() {
         double result = 0;
         String valueCB1 = volumeFromCB.getValue();
         String valueCB2 = volumeToCB.getValue();
         try {
-            double inputData = Double.parseDouble(volumeInputField.getText().trim().replace(",", "."));
+            var inputData = Double.parseDouble(volumeInputField.getText().trim().replace(",", "."));
             if (inputData < 0) {
-                throw new UnexpectedException("Negative value entered!");
+                throw new UnexpectedException(Constants.NE_WARN);
             }
             if (valueCB1.equals(volumeValues.get(0))) {
                 if (valueCB2.equals(volumeValues.get(0))) result = inputData;
@@ -328,11 +346,14 @@ public class MainController implements Initializable {
             return inputData + " " + valueCB1 + " = " + result + " " + valueCB2;
 
         } catch (NullPointerException npe) {
-            return "No units selected. Choose units to convert and try again.";
+            npe.printStackTrace();
+            return Constants.NPE_WARN;
         } catch (NumberFormatException nfe) {
-            return "Input field is empty! Try again.";
+            nfe.printStackTrace();
+            return Constants.NPE_WARN;
         } catch (UnexpectedException ne) {
-            return "Negative value entered! Try again.";
+            ne.printStackTrace();
+            return Constants.NE_WARN;
         }
     }
 }
