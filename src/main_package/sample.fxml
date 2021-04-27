@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import imports.NumberTextField?>
+<GridPane alignment="center" hgap="10" prefHeight="284.0" prefWidth="495.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_package.MainController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <TabPane prefHeight="307.0" prefWidth="495.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Length">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
+                <Button fx:id="convertButtonLength" defaultButton="true" layoutX="200.0" layoutY="209.0" mnemonicParsing="false" onAction="#lengthConvert" prefWidth="97.0" style="-fx-background-color: #7be398;" text="CONVERT" textAlignment="CENTER" />
+                <Text layoutX="134.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" AnchorPane.leftAnchor="134.0" />
+                <Text layoutX="342.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+                <ComboBox fx:id="lengthFromCB" layoutX="73.0" layoutY="154.0" prefWidth="150.0" style="-fx-background-color: #d9d8d7;" AnchorPane.leftAnchor="73.0" AnchorPane.topAnchor="154.0" />
+                <ComboBox fx:id="lengthToCB" layoutX="273.0" layoutY="154.0" prefWidth="150.0" style="-fx-background-color: #d9d8d7;" AnchorPane.rightAnchor="73.0" />
+                <NumberTextField fx:id="lengthInputField" layoutX="172.0" layoutY="85.0" promptText="Enter value" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="85.0" />
+                <Text layoutX="203.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:" AnchorPane.bottomAnchor="187.0" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="204.022265625" AnchorPane.topAnchor="53.05078125" />
+            </AnchorPane>
+        </Tab>
+        <Tab text="Mass">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
+                <Button fx:id="convertMassButton" defaultButton="true" layoutX="200.0" layoutY="209.0" mnemonicParsing="false" onAction="#massConvert" prefWidth="97.0" style="-fx-background-color: #7be398;" text="CONVERT" textAlignment="CENTER" />
+                <Text layoutX="134.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" AnchorPane.leftAnchor="134.0" />
+                <Text layoutX="342.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+                <ComboBox fx:id="massFromCB" layoutX="73.0" layoutY="154.0" prefWidth="150.0" promptText="1st unit" style="-fx-background-color: #d9d8d7;" AnchorPane.leftAnchor="73.0" AnchorPane.topAnchor="154.0" />
+                <ComboBox fx:id="massToCB" layoutX="273.0" layoutY="154.0" prefWidth="150.0" promptText="2nd unit" style="-fx-background-color: #d9d8d7;" AnchorPane.rightAnchor="73.0" />
+                <NumberTextField fx:id="massInputField" layoutX="172.0" layoutY="85.0" promptText="Enter value" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="85.0" />
+                <Text layoutX="203.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:" AnchorPane.bottomAnchor="187.0" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="204.022265625" AnchorPane.topAnchor="53.05078125" />
+            </AnchorPane>
+        </Tab>
+        <Tab text="Temperature">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
+                <Button fx:id="convertTempButton" defaultButton="true" layoutX="200.0" layoutY="209.0" mnemonicParsing="false" onAction="#tempConvert" prefWidth="97.0" style="-fx-background-color: #7be398;" text="CONVERT" textAlignment="CENTER" />
+                <Text layoutX="134.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" AnchorPane.leftAnchor="134.0" />
+                <Text layoutX="342.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+                <ComboBox fx:id="tempFromCB" layoutX="73.0" layoutY="154.0" prefWidth="150.0" promptText="1st unit" style="-fx-background-color: #d9d8d7;" AnchorPane.leftAnchor="73.0" AnchorPane.topAnchor="154.0" />
+                <ComboBox fx:id="tempToCB" layoutX="273.0" layoutY="154.0" prefWidth="150.0" promptText="2nd unit" style="-fx-background-color: #d9d8d7;" AnchorPane.rightAnchor="73.0" />
+                <NumberTextField fx:id="tempInputField" layoutX="172.0" layoutY="85.0" promptText="Enter value" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="85.0" />
+                <Text layoutX="203.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:" AnchorPane.bottomAnchor="187.0" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="204.022265625" AnchorPane.topAnchor="53.05078125" />
+            </AnchorPane>
+        </Tab>
+        <Tab text="Square">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
+                <Button fx:id="convertSquareButton" defaultButton="true" layoutX="200.0" layoutY="209.0" mnemonicParsing="false" onAction="#squareConvert" prefWidth="97.0" style="-fx-background-color: #7be398;" text="CONVERT" textAlignment="CENTER" />
+                <Text layoutX="134.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" AnchorPane.leftAnchor="134.0" />
+                <Text layoutX="342.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+                <ComboBox fx:id="squareFromCB" layoutX="73.0" layoutY="154.0" prefWidth="150.0" promptText="1st unit" style="-fx-background-color: #d9d8d7;" AnchorPane.leftAnchor="73.0" AnchorPane.topAnchor="154.0" />
+                <ComboBox fx:id="squareToCB" layoutX="273.0" layoutY="154.0" prefWidth="150.0" promptText="2nd unit" style="-fx-background-color: #d9d8d7;" AnchorPane.rightAnchor="73.0" />
+                <NumberTextField fx:id="squareInputField" layoutX="172.0" layoutY="85.0" promptText="Enter value" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="85.0" />
+                <Text layoutX="203.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:" AnchorPane.bottomAnchor="187.0" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="204.022265625" AnchorPane.topAnchor="53.05078125" />
+            </AnchorPane>
+        </Tab>
+        <Tab text="Volume">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="309.0">
+                <Button fx:id="convertVolumeButton" defaultButton="true" layoutX="200.0" layoutY="209.0" mnemonicParsing="false" onAction="#volumeConvert" prefWidth="97.0" style="-fx-background-color: #7be398;" text="CONVERT" textAlignment="CENTER" />
+                <Text layoutX="134.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" AnchorPane.leftAnchor="134.0" />
+                <Text layoutX="342.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+                <ComboBox fx:id="volumeFromCB" layoutX="73.0" layoutY="154.0" prefWidth="150.0" promptText="1st unit" style="-fx-background-color: #d9d8d7;" AnchorPane.leftAnchor="73.0" AnchorPane.topAnchor="154.0" />
+                <ComboBox fx:id="volumeToCB" layoutX="273.0" layoutY="154.0" prefWidth="150.0" promptText="2nd unit" style="-fx-background-color: #d9d8d7;" AnchorPane.rightAnchor="73.0" />
+                <NumberTextField fx:id="volumeInputField" layoutX="172.0" layoutY="85.0" promptText="Enter value" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="85.0" />
+                <Text layoutX="203.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your value:" AnchorPane.bottomAnchor="187.0" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="204.022265625" AnchorPane.topAnchor="53.05078125" />
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+</GridPane>

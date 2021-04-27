@@ -1,13 +1,12 @@
-package sample;
+package main_package;
 
+import imports.NumberTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
-import java.io.PrintStream;
-import java.io.PrintWriter;
 import java.net.URL;
 import java.rmi.UnexpectedException;
 import java.util.ResourceBundle;
@@ -21,11 +20,11 @@ public class MainController implements Initializable {
     public Button convertSquareButton;
     public Button convertVolumeButton;
 
-    public TextField lengthInputField;
-    public TextField massInputField;
-    public TextField tempInputField;
-    public TextField squareInputField;
-    public TextField volumeInputField;
+    public NumberTextField lengthInputField;
+    public NumberTextField massInputField;
+    public NumberTextField tempInputField;
+    public NumberTextField squareInputField;
+    public NumberTextField volumeInputField;
 
 
     @FXML
@@ -61,29 +60,44 @@ public class MainController implements Initializable {
 
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        lengthInputField.setText("1");
         lengthFromCB.setItems(lengthValues);
+        lengthFromCB.setValue(lengthValues.get(1));
         lengthToCB.setItems(lengthValues);
+        lengthToCB.setValue(lengthValues.get(2));
+
         convertButtonLength.setOnAction(event -> showResult(lengthConvert()));
 
+        massInputField.setText("1");
         massFromCB.setItems(massValues);
+        massFromCB.setValue(massValues.get(0));
         massToCB.setItems(massValues);
+        massToCB.setValue(massValues.get(1));
         convertMassButton.setOnAction(event -> showResult(massConvert()));
 
+        tempInputField.setText("1");
         tempFromCB.setItems(tempValues);
+        tempFromCB.setValue(tempValues.get(0));
         tempToCB.setItems(tempValues);
+        tempToCB.setValue(tempValues.get(1));
         convertTempButton.setOnAction(event -> showResult(tempConvert()));
 
+        squareInputField.setText("1");
         squareFromCB.setItems(squareValues);
+        squareFromCB.setValue(squareValues.get(0));
         squareToCB.setItems(squareValues);
+        squareToCB.setValue(squareValues.get(1));
         convertSquareButton.setOnAction(event -> showResult(squareConvert()));
 
+        volumeInputField.setText("1");
         volumeFromCB.setItems(volumeValues);
+        volumeFromCB.setValue(volumeValues.get(0));
         volumeToCB.setItems(volumeValues);
+        volumeToCB.setValue(volumeValues.get(1));
         convertVolumeButton.setOnAction(event -> showResult(volumeConvert()));
     }
 
     static ObservableList<String> lengthValues = FXCollections.observableArrayList(
-            null,
             "Metres",
             "Kilometres",
             "Miles"
@@ -104,25 +118,22 @@ public class MainController implements Initializable {
                 throw new UnexpectedException(Constants.NE_WARN);
             }
 
-            if (valueCB1.equals(lengthValues.get(0)) ^ valueCB2.equals(lengthValues.get(0))) {
-                return "No Item is Selected";
+            if (valueCB1.equals(lengthValues.get(0))) {
+                if (valueCB2.equals(lengthValues.get(0))) result = inputData;
+                if (valueCB2.equals(lengthValues.get(1))) result = inputData * 0.001;
+                if (valueCB2.equals(lengthValues.get(2))) result = inputData / 1609.34;
             }
+
             if (valueCB1.equals(lengthValues.get(1))) {
                 if (valueCB2.equals(lengthValues.get(1))) result = inputData;
-                if (valueCB2.equals(lengthValues.get(2))) result = inputData * 0.001;
-                if (valueCB2.equals(lengthValues.get(3))) result = inputData / 1609.34;
+                if (valueCB2.equals(lengthValues.get(0))) result = inputData * 1000;
+                if (valueCB2.equals(lengthValues.get(2))) result = inputData / 1.609;
             }
 
             if (valueCB1.equals(lengthValues.get(2))) {
                 if (valueCB2.equals(lengthValues.get(2))) result = inputData;
-                if (valueCB2.equals(lengthValues.get(1))) result = inputData * 1000;
-                if (valueCB2.equals(lengthValues.get(3))) result = inputData / 1.609;
-            }
-
-            if (valueCB1.equals(lengthValues.get(3))) {
-                if (valueCB2.equals(lengthValues.get(3))) result = inputData;
-                if (valueCB2.equals(lengthValues.get(1))) result = inputData * 1609;
-                if (valueCB2.equals(lengthValues.get(2))) result = inputData * 1.609;
+                if (valueCB2.equals(lengthValues.get(0))) result = inputData * 1609;
+                if (valueCB2.equals(lengthValues.get(1))) result = inputData * 1.609;
             }
             return inputData + " " + valueCB1 + " = " + result + " " + valueCB2;
 

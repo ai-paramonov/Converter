@@ -1,6 +1,6 @@
-package sample;
+package main_package;
 
-public class Constants {
+class Constants {
     private Constants() {
         throw new AssertionError();
     }
