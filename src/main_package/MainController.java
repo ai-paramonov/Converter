@@ -1,5 +1,6 @@
 package main_package;
 
+import imports.NegativeNumberTextField;
 import imports.NumberTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -22,7 +23,7 @@ public class MainController implements Initializable {
 
     public NumberTextField lengthInputField;
     public NumberTextField massInputField;
-    public NumberTextField tempInputField;
+    public NegativeNumberTextField tempInputField;
     public NumberTextField squareInputField;
     public NumberTextField volumeInputField;
 

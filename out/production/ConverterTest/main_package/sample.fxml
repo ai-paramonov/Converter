@@ -5,7 +5,7 @@
 <?import javafx.scene.text.*?>
 
 <?import imports.NumberTextField?>
-<GridPane alignment="center" hgap="10" prefHeight="284.0" prefWidth="495.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_package.MainController">
+<GridPane alignment="center" hgap="10" prefHeight="284.0" prefWidth="495.0" vgap="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_package.MainController">
     <columnConstraints>
         <ColumnConstraints />
     </columnConstraints>
